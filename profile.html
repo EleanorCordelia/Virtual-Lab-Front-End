@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile with Header</title>
+    <link rel="stylesheet" href="css/profile.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="IELTS9 Logo" />
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="main-page.html">Home</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="user-info">
+            <span class="username">Username</span>
+            <img
+              src="images/profile-placeholder.svg"
+              alt="Profile Picture"
+              class="profile-pic"
+            />
+            <button id="logoutBtn" class="btn logout">Logout</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="profile-header">
+      <div class="profile-pic-container">
+        <img
+          id="profile-image"
+          src="images/profile-placeholder.svg"
+          alt="Profile Picture"
+        />
+        <div class="edit-icon" id="editIcon">
+          <img src="images/Vector.png" alt="Edit Icon" />
+        </div>
+        <label for="fileInput" class="visually-hidden">Upload Profile Picture</label>
+        <input
+          type="file"
+          id="fileInput"
+          class="hidden-input"
+          accept="image/*"
+          title="Upload Profile Picture"
+          placeholder="Choose a file"
+        />
+        <p id="file-status"></p>
+      </div>
+    </div>
+
+    <div class="profile-container">
+      <h1 id="userName" class="user-name">Loading...</h1>
+      <p id="userId" class="user-id">User ID: Loading...</p>
+      <p id="joinDate" class="join-date">Joined: Loading...</p>
+      <div class="flag-icon">
+        <img src="images/bendera.png" alt="Flag" />
+      </div>
+    </div>
+
+    <div class="statistics-section">
+      <h2>Statistics</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <img src="images/streak.png" alt="Day Streak" />
+          <span class="stat-value">5</span>
+          <span class="stat-label">Day streak</span>
+        </div>
+        <div class="stat-item">
+          <img src="images/xp.png" alt="Total XP" />
+          <span class="stat-value">230</span>
+          <span class="stat-label">Total XP</span>
+        </div>
+        <div class="stat-item">
+          <img src="images/language.png" alt="Current League" />
+          <span class="stat-value">English</span>
+          <span class="stat-label">Current league</span>
+        </div>
+        <div class="stat-item">
+          <img src="images/top3.png" alt="Top 3 finishes" />
+          <span class="stat-value">3</span>
+          <span class="stat-label">Top 3 finishes</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="achievements-section">
+      <h2>Achievements</h2>
+      <a href="#" class="view-all">VIEW ALL</a>
+    </div>
+
+    <div class="add-friends-section">
+      <h2>Add friends</h2>
+      <div class="friend-option">
+        <div class="option-content">
+          <img src="images/find.png" alt="Find Friends Icon" />
+          <span>Find friends</span>
+        </div>
+        <img src="images/plane1.png" alt="Arrow" class="plane1" />
+      </div>
+      <div class="friend-option">
+        <div class="option-content">
+          <img src="images/invite.png" alt="Invite Friends Icon" />
+          <span>Invite friends</span>
+        </div>
+        <img src="images/plane2.png" alt="Arrow" class="plane2" />
+      </div>
+    </div>
+
+    <div class="signature-section">
+      <h2>Signature</h2>
+      <canvas id="signatureCanvas" width="500" height="200"></canvas>
+      <div class="signature-controls">
+        <button id="clearSignature">Clear</button>
+        <button id="saveSignature">Save Signature</button>
+        <a id="downloadLink" class="hidden">Download Signature</a>
+      </div>
+    </div>
+
+    <div class="image-adjustment">
+      <label for="positionX">Adjust Horizontal:</label>
+      <input type="range" id="positionX" min="0" max="100" value="50" />
+
+      <label for="positionY">Adjust Vertical:</label>
+      <input type="range" id="positionY" min="0" max="100" value="50" />
+    </div>
+
+    <!-- Add SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Your scripts -->
+    <script src="js/profile.js"></script>
+  </body>
+</html>

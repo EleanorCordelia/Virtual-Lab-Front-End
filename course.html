@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courses - IELTS9</title>
+    <link rel="stylesheet" href="css/course.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="IELTS9 Logo" />
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="main-page.html">Home</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="user-info">
+            <span class="username">Username</span>
+            <img
+              src="images/profile-placeholder.svg"
+              alt="Profile Picture"
+              class="profile-pic"
+            />
+            <button id="logoutBtn" class="btn logout">Logout</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="konten">
+        <div class="speaking-info">
+          <div class="speaking-time">
+            <img src="images/jam.png" alt="Speaking Icon" class="icon" />
+            <div class="text-group">
+              <span>Speaking Time</span>
+              <h2 id="speaking-time">0 sec</h2>
+            </div>
+          </div>
+          <div class="streak-info">
+            <img src="images/fire.png" alt="Streak Icon" class="icon" />
+            <div class="text-group">
+              <span>Streak</span>
+              <h2 id="streak">0 days</h2>
+            </div>
+          </div>
+        </div>
+
+        <div class="weekdays">
+          <span data-day="0">Sun</span>
+          <span data-day="1">Mon</span>
+          <span data-day="2">Tue</span>
+          <span data-day="3">Wed</span>
+          <span data-day="4">Thu</span>
+          <span data-day="5">Fri</span>
+          <span data-day="6">Sat</span>
+        </div>
+
+        <!-- Progress Card -->
+        <div class="card">
+          <section class="progress-section">
+            <h2>Your Progress</h2>
+            <canvas id="progressChart" width="400" height="200"></canvas>
+          </section>
+        </div>
+
+        <div class="courses">
+          <a href="speaking.html">
+            <div class="course-card" data-course="speaking">
+              <img src="images/mic.png" alt="General Speaking Class" />
+              <div class="text-link">
+                <h3>General Speaking Class</h3>
+              </div>
+              <div class="availability">
+                <img
+                  src="images/avail.png"
+                  class="availability-icon"
+                  title="Availability Icon"
+                />
+                <p>Available</p>
+              </div>
+              <p>Lessons: 0/20</p>
+            </div>
+          </a>
+
+          <a href="listening.html">
+            <div class="course-card" data-course="listening">
+              <img src="images/listen.png" alt="Listening Class" />
+              <div class="text-link">
+                <h3>Listening Class</h3>
+              </div>
+              <div class="availability">
+                <img
+                  src="images/avail.png"
+                  class="availability-icon"
+                  title="Availability Icon"
+                />
+                <p>Available</p>
+              </div>
+              <p>Lessons: 0/20</p>
+            </div>
+          </a>
+
+          <a href="writing.html">
+            <div class="course-card" data-course="writing">
+              <img src="images/writi.png" alt="Writing Class" />
+              <div class="text-link">
+                <h3>Writing Class</h3>
+              </div>
+              <div class="availability">
+                <img
+                  src="images/avail.png"
+                  class="availability-icon"
+                  alt="Availability Icon"
+                />
+                <p>Available</p>
+              </div>
+              <p>Lessons: 0/20</p>
+            </div>
+          </a>
+
+          <a href="reading.html">
+            <div class="course-card" data-course="reading">
+              <img src="images/buku.png" alt="Reading Class" />
+              <div class="text-link">
+                <h3>Reading Class</h3>
+              </div>
+              <div class="availability">
+                <img
+                  src="images/avail.png"
+                  class="availability-icon"
+                  title="Availability Icon"
+                />
+                <p>Available</p>
+              </div>
+              <p>Lessons: 0/20</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Include SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Include Chart.js and ChartDataLabels plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+    <!-- Your custom JS -->
+    <script src="js/course.js"></script>
+  </body>
+</html>

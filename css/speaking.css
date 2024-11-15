@@ -1,0 +1,226 @@
+body {
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  margin-bottom: 4px;
+  border-radius: 3px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Center the navigation menu horizontally */
+  align-items: center; /* Align items to the center */
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-family: "Lexend", sans-serif;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #63ce87;
+}
+
+nav ul li a.btn.login {
+  background: #63ce87;
+  color: #fff;
+  padding: 6px 15px; /* Increase size */
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: "Lexend", sans-serif;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Add transform transition */
+  display: inline-block; /* Ensure it behaves like a button */
+  font-weight: 300;
+  display: none; /* Hide the login button */
+}
+
+nav ul li a.btn.login:hover {
+  background-color: #52b76f; /* Change background color on hover */
+  transform: scale(1.1); /* Add hover effect */
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info .profile-pic {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info .username {
+  margin-right: 10px;
+  font-weight: 500;
+  color: #333;
+}
+
+.user-info .btn.logout {
+  background: #63ce87;
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: "Lexend", sans-serif;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.user-info .btn.logout:hover {
+  background-color: #52b76f;
+  transform: scale(1.1);
+}
+
+.tips-container {
+  font-family: "Lexend", Arial, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 20px;
+  background-color: transparent;
+  border-radius: 8px;
+  padding-bottom: 50px;
+  transition: background-color 0.3s;
+  width: 89%;
+}
+
+.tips-text {
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+  font-family: "Lexend", Arial, sans-serif;
+}
+
+.tips-text:hover {
+  background-color: rgba(254, 255, 159, 0.7);
+}
+
+.tips-icon {
+  width: 30px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.tips-text span {
+  font-size: 18px;
+  font-family: "Lexend", Arial, sans-serif;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #ff0000;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 20px;
+  text-align: left;
+  font-family: "Lexend", Arial, sans-serif;
+}
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.control-button {
+  padding: 10px 20px;
+  background-color: #6374ce;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.control-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.record {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+#timer {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+#recordingsList {
+  margin-top: 20px;
+}
+
+#recordingsList div {
+  margin-bottom: 10px;
+}

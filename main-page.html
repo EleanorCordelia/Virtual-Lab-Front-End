@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IELTS9 Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main-page.css" />
+    <!-- Add SweetAlert CSS (optional for styling) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="IELTS9 Logo" />
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="main-page.html">Home</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="user-info">
+            <span class="username">Username</span>
+            <a href="profile.html"><img src="images/profile-placeholder.svg" alt="Profile Picture" class="profile-pic">
+              <!-- <img src="images/profile-placeholder.svg" alt="Profile Picture" class="profile-pic"> -->
+            </img></a>           
+            <button id="logoutBtn" class="btn logout">Logout</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="content">
+          <h2>Master Your IELTS Skills</h2>
+          <p>
+            Achieve your IELTS band 9 anytime, anywhere with IELTS9! Our
+            AI-powered simulator helps you self-practice for the IELTS speaking
+            test, job interviews, and everyday conversations!
+          </p>
+          <div class="buttons">
+            <button class="btn begin" onclick="location.href='course.html'">Begin Your Practice</button>
+            <button class="btn learn-more">Learn More</button>
+          </div>
+        </div>
+        <div class="image">
+          <img
+            src="images/landing-page.png"
+            alt="Group of people practicing IELTS"
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="universities">
+        <div class="university">
+          <img src="images/7.png" alt="University of Toronto Logo" />
+        </div>
+        <div class="university">
+          <img src="images/8.png" alt="Yale Logo" />
+        </div>
+        <div class="university">
+          <img src="images/9.png" alt="Imperial College London Logo" />
+        </div>
+        <div class="university">
+          <img src="images/10.png" alt="University of California Logo" />
+        </div>
+        <div class="university">
+          <img src="images/11.png" alt="NYU Logo" />
+        </div>
+        <div class="university">
+          <img src="images/12.png" alt="McGill Logo" />
+        </div>
+      </div>
+    </footer>
+    
+    <!-- Include SweetAlert JS before the main script -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/main-page.js"></script>
+  </body>
+</html>

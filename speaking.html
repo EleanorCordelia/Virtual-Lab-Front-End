@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speaking Class - IELTS9</title>
+    <link rel="stylesheet" href="css/speaking.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="images/logo.png" alt="IELTS9 Logo" />
+      </div>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="main-page.html">Home</a></li>
+          <li><a href="course.html">Courses</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class="user-info">
+            <span class="username">Username</span>
+            <img
+              src="images/profile-placeholder.svg"
+              alt="Profile Picture"
+              class="profile-pic"
+            />
+            <button id="logoutBtn" class="btn logout">Logout</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="tips-container">
+        <div class="tips-text">
+          <img src="images/tips.png" class="tips-icon" alt="Tips Icon" />
+
+          <span>Tips & Tricks</span>
+        </div>
+        <button class="close-button">×</button>
+      </div>
+
+      <h2>View these clips and try to answer the questions below</h2>
+
+      <div class="content-container">
+        <div class="questions">
+          <ol>
+            <li>
+              What was the main message or lesson from the video, and how do you
+              think it applies to real-life situations?
+            </li>
+            <li>
+              Can you describe one key moment or event from the video that stood
+              out to you, and explain why it caught your attention?
+            </li>
+            <li>
+              If you were the creator of the video, what would you change or add
+              to make it more engaging or informative?
+            </li>
+          </ol>
+        </div>
+
+        <div class="video-section">
+          <iframe
+            title="IELTS Speaking Video"
+            width="500"
+            height="280"
+            src="https://www.youtube.com/embed/ZwD1kG4PI0w"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="startBtn" class="control-button">Start</button>
+        <button id="pauseBtn" class="control-button" disabled>Pause</button>
+        <button id="resumeBtn" class="control-button" disabled>Resume</button>
+        <button id="finishBtn" class="control-button" disabled>Finish</button>
+        <div class="record">
+          <img src="images/c.png" alt="Record Icon" class="record-icon" />
+          <span id="timer">00:00</span>
+        </div>
+      </div>
+
+      <div id="recordingsList"></div>
+    </main>
+    <script src="js/course.js"></script>
+    <script src="js/speaking.js"></script>
+  </body>
+</html>

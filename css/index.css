@@ -1,0 +1,160 @@
+body {
+  font-family: 'Lexend', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  height: 3px;
+  width: 25px;
+  background: #333;
+  margin-bottom: 4px;
+  border-radius: 3px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: center; /* Center the navigation menu horizontally */
+  align-items: center; /* Align items to the center */
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-family: 'Lexend', sans-serif;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #63ce87;
+}
+
+nav ul li a.btn.login {
+  background: #63ce87;
+  color: #fff;
+  padding: 6px 15px; /* Increase size */
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Lexend', sans-serif;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Add transform transition */
+  display: inline-block; /* Ensure it behaves like a button */
+  font-weight: 300;
+}
+
+nav ul li a.btn.login:hover {
+  background-color: #52b76f; /* Change background color on hover */
+  transform: scale(1.1); /* Add hover effect */
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background: #f9f9f9;
+}
+
+.hero .content {
+  max-width: 50%;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  font-family: 'Lexend', sans-serif;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  font-family: 'Lexend', sans-serif;
+}
+
+.hero .buttons .btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: 500;
+  font-family: 'Lexend', sans-serif;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero .buttons .btn.begin {
+  background: #63ce87;
+  color: #fff;
+}
+
+.hero .buttons .btn.begin:hover {
+  transform: scale(1.1);
+  background-color: #52b76f;
+}
+
+.hero .buttons .btn.learn-more {
+  background: #6c757d;
+  color: #fff;
+}
+
+.hero .buttons .btn.learn-more:hover {
+  background-color: #5a6268;
+}
+
+.hero .image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Lexend', sans-serif;
+}
+
+.footer .universities {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .university {
+  margin: 10px;
+}
+
+.footer .university img {
+  height: 50px;
+}
